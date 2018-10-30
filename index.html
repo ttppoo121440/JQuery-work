@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery作業</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+
+    <!-- nivo-slider -->
+    <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+    <!-- Font Awesome's-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/classic/zebra_dialog.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zebra_dialog@latest/dist/css/flat/zebra_dialog.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="warp">
+        <div class="header">
+            <div class="nav">
+                <ul>
+                    <li><img src="https://upload.cc/i1/2018/09/02/MUHP85.png" alt=""><a class="fb" href="#">粉絲團</a></li>
+                    <li><img src="https://upload.cc/i1/2018/09/02/EdFzQ9.png" alt=""><a class="tw" href="#">追隨我們</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <a class="logo" href="#">
+                    <h1>Hex School</h1>
+                </a>
+                <ul class="menu">
+                    <li class="menuLi"><a class="home" href="index.html">　首頁　</a></li>
+                    <li class="menuLi"><a class="product" href="#">產品介紹</a>
+                        <ul class="productList">
+                            <li><a href="#">Html5基礎教學</a></li>
+                            <li><a href="#">響應式網站設計</a></li>
+                            <li><a href="#">JQuery實戰教學</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuLi"><a class="connection" href="#">聯絡我們</a>
+                        <ul class="connectionList">
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Line</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="img/toystory.jpg" data-thumb="img/toystory.jpg" alt="" />
+                    <img src="img/up.jpg" data-thumb="img/up.jpg" />
+                    <img src="img/walle.jpg" data-thumb="img/walle.jpg" alt="" />
+                    <img src="img/nemo.jpg" data-thumb="img/nemo.jpg" />
+                    <img src="img/navbar.jpg" data-thumb="img/nemo.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- <div class="intro grid">
+                <div class="card1"><img src="img/card1.png" alt="">
+                    <h2>Html 5 基礎教學</h2>
+                    <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                </div>
+                <div class="card2"><img src="img/card2.png" alt="">
+                    <h2>響應式網站設計</h2>
+                    <p>響 應 式 網 站 設 計 (Responsive web
+                        design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經式必備的。大角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+                </div>
+                <div class="card3"><img src="img/card3.png" alt="">
+                    <h2>JQuery 實戰教學</h2>
+                    <p>本課程有以下特色<br>
+                        ．瞭解變數的使用方法<br>
+                        ．學習並操作 DOM<br>
+                        ．學習基本數學運算方法<br>
+                        ．套件的操作及運用</p>
+                </div>
+            </div> -->
+            <ul class="list">
+                <li class="card"><img class="overlay_on" id="1" src="img/card1.png" alt="">
+                    <div class="layer"></div>
+                    <h2>Html 5 基礎教學</h2>
+                    <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                </li>
+
+                <li class="card"><img class="overlay_on" id="2" src="img/card2.png" alt="">
+                    <div class="layer"></div>
+                    <h2>響應式網站設計</h2>
+                    <p>響 應 式 網 站 設 計 (Responsive web
+                        design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經式必備的。大角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+                </li>
+                <li class="card"><img class="overlay_on" id="3" src="img/card3.png" alt="">
+                    <div class="layer"></div>
+                    <h2>JQuery 實戰教學</h2>
+                    <p>本課程有以下特色<br>
+                        <ul>
+                            <li>瞭解變數的使用方法</li>
+                            <li>學習並操作 DOM</li>
+                            <li>學習基本數學運算方法</li>
+                            <li>套件的操作及運用</li>
+                        </ul>
+                </li>
+            </ul>
+            <div class="tableview">
+                <h3>線上及實體課程的差異</h3>
+                <table>
+                    <tr>
+                        <th class="item">項目</th>
+                        <th>Hex School 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                    <tr>
+                        <td>費用</td>
+                        <td class="green">較低</td>
+                        <td class="green">較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td class="green">較低</td>
+                        <td class="green">很好</td>
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="green">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td>課程更新速度</td>
+                        <td class="green">普通</td>
+                        <td class="green">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td>多次複習</td>
+                        <td class="green">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="green">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form">
+                <h3>對我們課程有興趣嗎？<br>
+                    歡迎留下您的資料</h3>
+                <textarea name="content"></textarea>
+                <div class="inputBox">
+                    <input type="text" required="" name="name">
+                    <label for="">姓名</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" required="" name="phone">
+                    <label for="">電話</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" required="" name="email">
+                    <label for="">信箱</label>
+                </div>
+                <div class="inputBox">
+                    <a class="send" href="#"><span></span>送出</a>
+                </div>
+            </div>
+        </div>
+        <div class="fonter">
+            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+            <h4>聯絡我們：</h4>
+            <p>hexschool@gmail.com</p><br>
+            <h4>電話：</h4>
+            <p>0999123456</p>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div id="overlay"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/card1.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/card2.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/card3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button class="topbtn"><i class="fas fa-arrow-up"></i></button>
+
+
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script src="js/queryloader2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/zebra_dialog.min.js"></script>
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>
