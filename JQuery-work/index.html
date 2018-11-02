@@ -8,8 +8,6 @@
     <title>JQuery作業</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-
-
     <!-- nivo-slider -->
     <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/themes/light/light.css" type="text/css" media="screen" />
@@ -32,7 +30,6 @@
 </head>
 
 <body>
-
     <div class="warp">
         <div class="header">
             <div class="nav">
@@ -41,6 +38,7 @@
                     <li><img src="https://upload.cc/i1/2018/09/02/EdFzQ9.png" alt=""><a class="tw" href="#">追隨我們</a></li>
                 </ul>
             </div>
+            <div class="clear"></div>
             <div class="title">
                 <a class="logo" href="#">
                     <h1>Hex School</h1>
@@ -62,6 +60,7 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="clear"></div>
             </div>
             <div class="slider-wrapper theme-default">
                 <div id="slider" class="nivoSlider">
@@ -73,34 +72,13 @@
                 </div>
             </div>
         </div>
-
         <div class="content">
-            <!-- <div class="intro grid">
-                <div class="card1"><img src="img/card1.png" alt="">
-                    <h2>Html 5 基礎教學</h2>
-                    <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
-                </div>
-                <div class="card2"><img src="img/card2.png" alt="">
-                    <h2>響應式網站設計</h2>
-                    <p>響 應 式 網 站 設 計 (Responsive web
-                        design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經式必備的。大角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
-                </div>
-                <div class="card3"><img src="img/card3.png" alt="">
-                    <h2>JQuery 實戰教學</h2>
-                    <p>本課程有以下特色<br>
-                        ．瞭解變數的使用方法<br>
-                        ．學習並操作 DOM<br>
-                        ．學習基本數學運算方法<br>
-                        ．套件的操作及運用</p>
-                </div>
-            </div> -->
             <ul class="list">
                 <li class="card"><img class="overlay_on" id="1" src="img/card1.png" alt="">
                     <div class="layer"></div>
                     <h2>Html 5 基礎教學</h2>
                     <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
                 </li>
-
                 <li class="card"><img class="overlay_on" id="2" src="img/card2.png" alt="">
                     <div class="layer"></div>
                     <h2>響應式網站設計</h2>
@@ -119,6 +97,7 @@
                         </ul>
                 </li>
             </ul>
+            <div class="clear"></div>
             <div class="tableview">
                 <h3>線上及實體課程的差異</h3>
                 <table>
@@ -169,24 +148,23 @@
             <div class="form">
                 <h3>對我們課程有興趣嗎？<br>
                     歡迎留下您的資料</h3>
-                <textarea name="content"></textarea>
+                <textarea name="content" class="textcontent"></textarea>
                 <div class="inputBox">
-                    <input type="text" required="" name="name">
-                    <label for="">姓名</label>
+                    <input class="textfield" type="text" required="" name="name">
+                    <label class="lbl">姓名</label>
                 </div>
-
                 <div class="inputBox">
-                    <input type="text" required="" name="phone">
-                    <label for="">電話</label>
+                    <input class="textfield" type="text" required="" name="phone">
+                    <label class="lbl">電話</label>
                 </div>
-
                 <div class="inputBox">
-                    <input type="text" required="" name="email">
-                    <label for="">信箱</label>
+                    <input class="textfield" type="text" required="" name="email">
+                    <label class="lbl">信箱</label>
                 </div>
                 <div class="inputBox">
                     <a class="send" href="#"><span></span>送出</a>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
         <div class="fonter">
@@ -195,6 +173,7 @@
             <p>hexschool@gmail.com</p><br>
             <h4>電話：</h4>
             <p>0999123456</p>
+            <div class="clear"></div>
         </div>
     </div>
     <div class="swiper-container">
@@ -221,14 +200,12 @@
 
     <button class="topbtn"><i class="fas fa-arrow-up"></i></button>
 
-
     <script src="js/jquery-1.9.0.min.js"></script>
     <script src="js/jquery.nivo.slider.js"></script>
     <script src="js/queryloader2.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/zebra_dialog.min.js"></script>
     <script src="js/all.js"></script>
-
 </body>
 
 </html>
